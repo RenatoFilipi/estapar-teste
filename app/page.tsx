@@ -16,7 +16,7 @@ const Home = () => {
   };
 
   return (
-    <div className="flex justify-center items-center w-full h-dvh relative bg-[#F4F4F4]">
+    <div className="flex justify-center items-center w-full h-dvh relative bg-[#F4F4F4] dark:bg-background">
       <div className="relative">
         <div className="absolute -top-20 left-1/2 -translate-x-1/2">
           <Brand className="h-10" />
