@@ -25,3 +25,7 @@
 
 - **React Hook Form**  
   Gerenciamento de formulários de forma performática e integrada ao React, reduzindo re-renderizações desnecessárias e simplificando validação.
+
+  ---
+  username: estapar
+  password: @estapar@
