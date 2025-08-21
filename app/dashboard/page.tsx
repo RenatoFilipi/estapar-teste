@@ -1,8 +1,21 @@
+"use client";
+
 import { Card } from "@/components/ui/card";
 import { ArrowRightIcon, Building2Icon } from "lucide-react";
 import Link from "next/link";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 const Dashboard = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      router.push("/");
+    }
+  }, [router]);
+
   return (
     <div className="grid gap-6">
       <div className="grid gap-5">
@@ -12,14 +25,15 @@ const Dashboard = () => {
           mensalidade em um só lugar.
         </p>
       </div>
+
       <div className="grid sm:grid-cols-2">
         <Link href={"/dashboard/garages"}>
-          <Card className="p-6 relative cursor-pointer hover:bg-foreground/5">
+          <Card className="p-6 relative cursor-pointer hover:bg-foreground/5 hover:border-primary/70 transition-colors">
             <ArrowRightIcon className="absolute top-6 right-6 text-foreground/20 w-6 h-6" />
             <Building2Icon className="text-primary w-9 h-9" />
             <div>
               <span className="font-semibold text-xl">Garagens</span>
-              <p className="text-muted-foreground">Veja a lista de garagens disponiveis e suas configurações.</p>
+              <p className="text-muted-foreground">Veja a lista de garagens disponíveis e suas configurações.</p>
             </div>
           </Card>
         </Link>
