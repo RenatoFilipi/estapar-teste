@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Teste Técnico - Front-end Pleno (React)
 
-## Getting Started
+**Desenvolvido por:** Renato Rosa  
+**Vaga:** Front-end Pleno (React)  
+**Empresa:** Estapar
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Stack Utilizada
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js**  
+  Escolhido pela sua capacidade de criar aplicações React com renderização híbrida (SSR/SSG), roteamento simplificado e otimização de performance.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Tailwind CSS**  
+  Permite criar interfaces responsivas e consistentes rapidamente, usando classes utilitárias, sem a necessidade de escrever CSS personalizado complexo.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **ShadcnUI**  
+  Biblioteca de componentes prontos que aceleram o desenvolvimento de UI, mantendo consistência visual e boa acessibilidade.
 
-## Learn More
+- **date-fns**  
+  Para manipulação de datas de forma simples e eficiente, sem carregar bibliotecas pesadas como Moment.js.
 
-To learn more about Next.js, take a look at the following resources:
+- **Zod**  
+  Validação de dados com tipagem TypeScript, garantindo segurança e consistência nos formulários e dados do backend.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **React Hook Form**  
+  Gerenciamento de formulários de forma performática e integrada ao React, reduzindo re-renderizações desnecessárias e simplificando validação.
